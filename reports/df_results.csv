@@ -1,0 +1,9 @@
+	FFNN	CNN	LSTM
+True Negative	2535.0	2977.0	2896.0
+False Positive	1324.0	882.0	963.0
+False Negative	912.0	1005.0	946.0
+True Positive	5757.0	5664.0	5723.0
+Accuracy	0.79	0.82	0.82
+Recall	0.86	0.85	0.86
+Precision	0.81	0.87	0.86
+F1_score	0.81	0.87	0.86
