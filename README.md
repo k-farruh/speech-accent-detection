@@ -97,7 +97,6 @@ The FFNN model architecture:
 <p align="center"><img src="img/model_FFNN_architecture.png" width="600"></p>
 
 **Classification Results**
-<p align="center"><img src="img/two_class_gmu_130_epochs.png" width="600"></p>
 
 - **Accuracy**: 0.63     0.90     0.87
 - **Recall** : 0.75     0.91     0.90
