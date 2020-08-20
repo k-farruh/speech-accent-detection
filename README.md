@@ -109,7 +109,6 @@ The CNN model architecture:
 <p align="center"><img src="img/model_CNN_architecture.png" width="600"></p>
 
 **Classification Results**
-<p align="center"><img src="img/two_class_gmu_130_epochs.png" width="600"></p>
 
 - **Accuracy**: 0.90
 - **Recall** : 0.91
@@ -118,7 +117,6 @@ The CNN model architecture:
 
 ### Long Short-Term Memory (LSTM)
 **Classification Results**
-<p align="center"><img src="img/two_class_gmu_130_epochs.png" width="600"></p>
 
 - **Accuracy**:0.87
 - **Recall** : 0.90
