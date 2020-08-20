@@ -22,11 +22,12 @@ from tensorflow.keras import optimizers
 from tensorflow.keras.callbacks import TensorBoard
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.callbacks import ModelCheckpoint
-from tensorflow.keras.layers import Dense, Dropout, Flatten
-from tensorflow.keras.models import load_model
 from tensorflow.keras.layers import LSTM
 from tensorflow.keras.layers import MaxPooling2D, Conv2D
+from tensorflow.keras.layers import Dense, Dropout, Flatten
+from tensorflow.keras.models import load_model
 from tensorflow.keras.models import Sequential
+from tensorflow.keras.utils import plot_model
 from sklearn.metrics import confusion_matrix, accuracy_score, recall_score, precision_score
 from sklearn.model_selection import train_test_split
 
@@ -229,6 +230,16 @@ class Modeling:
                 raise Exception("Method %s not implemented" % method_name)
 
         model = load_model(self.project_path / ("models/best_" + network + ".h5"))  # rollback to best mod
+
+        plot_model(
+            model,
+            to_file="../img/model_" + network + "_architecture.png",
+            show_shapes=True,
+            show_layer_names=True,
+            rankdir="TB",
+            expand_nested=True,
+            dpi=900,
+        )
 
         if network == 'FFNN':
             rows = self.X_test.shape[0]

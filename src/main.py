@@ -16,14 +16,14 @@ import sys
 from dotenv import find_dotenv, load_dotenv
 from pathlib import Path
 
-from src.data.make_dataset import CombineAndCreateDF, CreateAccentData
-from src.features.mfcc_train_test_data import WavToMFCC
-from src.models.train_model import Modeling
+# from src.data.make_dataset import CombineAndCreateDF, CreateAccentData
+# from src.features.mfcc_train_test_data import WavToMFCC
+# from src.models.train_model import Modeling
 
 sys.path.append('../../src/')
-# from data.make_dataset import CombineAndCreateDF, CreateAccentData
-# from features.mfcc_train_test_data import WavToMFCC
-# from models.train_model import Modeling
+from data.make_dataset import CombineAndCreateDF, CreateAccentData
+from features.mfcc_train_test_data import WavToMFCC
+from models.train_model import Modeling
 
 
 def main(project_dir):
@@ -79,7 +79,7 @@ def main(project_dir):
     epochs = 2
     num_classes = 2
     batch_size = 128
-    need_to_train = True
+    need_to_train = False
 
     dir_data = project_dir / "data/processed"
     dir_results = project_dir / "reports"
