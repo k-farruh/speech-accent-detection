@@ -11,22 +11,22 @@ The human speaks a language with an accent. A particular accent necessarily refl
 - [Objectives](#objectives)
 - [Dataset](#dataset)
 - [Mel Frequency Cepstrum Coefficients](#mel-frequency-cepstrum-coefficients--mfcc-)
-- [Overview](#overview-1)
+- [Overview](#overview)
 - [Models](#models)
-    - [FFNN](#ffnn)
-    - [CNN](#cnn)
-    - [LSTM](#lstm) 
+    - [FFNN](#ffnn--feed-forward-neural-network-)
+    - [CNN](#cnn--convolution-neural-network)
+    - [LSTM](#lstm--long-short-term-memory)
 - [Incorrect Classifications](#incorrect-classifications)
 - [Future Work](#future-work)
 
 
-### About
+### About 
 
 The English language is a global language. It is becoming a must language for most people. Since the English language going to be part of different nationals, the origin of the English language is changing based on location and the mother languages of the people in that area. So on we can find American-English, England-English, Indian-English, and other English languages. One of the significant differences between different English languages is the accent. 
 
 Accent detection would allow us to define the student's accent level and re-train with a native speaker or for the school that wants to hire the teacher, which could determine the accent on the teacher. 
 
-### Objective
+### Objectives
 + The model can classify the speaker's accent based on the audio file (Wav format).
 
 ### Dependencies:
@@ -92,7 +92,7 @@ From [Keras FAQ](https://keras.io/getting-started/faq/):
 
 Besides, the training loss is the average of the losses over each batch of training data. Because your model is changing over time, the loss over the first batches of an epoch is generally higher than over the last batches. On the other hand, the testing loss for an epoch is computed using the model as it is at the end of the epoch, resulting in a lower loss."
 
-### Feed-Forward Neural Network (FFNN) 
+### FFNN (Feed-Forward Neural Network) 
 The FFNN model architecture:  
 <p align="center"><img src="img/model_FFNN_architecture.png" width="600"></p>
 
@@ -104,7 +104,7 @@ The FFNN model architecture:
 - **Precision**: 0.69     0.93     0.89
 - **F1_score**: 0.69     0.93     0.89
 
-### Convolution Neural Network (CNN)
+### CNN (Convolution Neural Network)
 The CNN model architecture:  
 <p align="center"><img src="img/model_CNN_architecture.png" width="600"></p>
 
@@ -116,7 +116,7 @@ The CNN model architecture:
 - **Precision**: 0.93
 - **F1_score**: 0.93
 
-### Long Short-Term Memory (LSTM)
+### LSTM (Long Short-Term Memory)
 **Classification Results**
 <p align="center"><img src="img/two_class_gmu_130_epochs.png" width="600"></p>
 
