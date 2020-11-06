@@ -33,8 +33,8 @@ wave
 # you must install CUDA, cuDNN and more: see tensorflow.org for the detailed
 # installation instructions.
 
-#tensorflow==2.0.1
-tensorflow-gpu==2.0.0
+#tensorflow>=2.0.3
+tensorflow-gpu>=2.0.3
 
 # Optional: the TF Serving API library is just needed for chapter 19.
 tensorflow-serving-api==2.0.0
